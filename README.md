@@ -1,2 +1,2 @@
 # WEB_JS_Study
-Repository for JS 
+Repository for JS Study
