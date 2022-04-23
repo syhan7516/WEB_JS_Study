@@ -1,2 +1,2 @@
-# WEB_JS_Practice
+# WEB_JS_
 Repository for JS practice
