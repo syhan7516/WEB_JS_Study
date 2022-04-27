@@ -7,17 +7,28 @@
    
     <!-- head / body -->
 
-    <body style="background-color:blue;">
-        <input type="button" value="night" onclick="
-        if(night)
-        {
+    <body style="background-color:white;">
+        <p>색깔 전환 버튼 테스트</p>
+        <input type="button" value="Night" onclick="
             document.querySelector('body').style.backgroundColor='black';
-            document.querySelector('body').style.color='while';
-        }
-        else
-        {
+            document.querySelector('body').style.color='white';">
+
+        <input type="button" value="Day" onclick="
             document.querySelector('body').style.backgroundColor='white';
-            document.querySelector('body').style.colorcolor='black';
-        }">
+            document.querySelector('body').style.color='black';">
+            
+        <input id="Switch" type="button" value="ON" onclick="
+            if(document.querySelector('#Switch').value === 'ON')
+            {
+                document.querySelector('body').style.backgroundColor='white';
+                document.querySelector('body').style.color='black';
+                document.querySelector('#Switch').value ='OFF';
+            }
+            else
+            {
+                document.querySelector('body').style.backgroundColor='black';
+                document.querySelector('body').style.color='white';
+                document.querySelector('#Switch').value ='ON';
+            }">
     </body>
 </html>

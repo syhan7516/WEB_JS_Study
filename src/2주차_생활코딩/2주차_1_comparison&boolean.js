@@ -1,22 +1,22 @@
 document.write("<div>1장 비교연산자 & 불리언 </div>");
 
-const ob1 = {
-    key1 : 1,
-    key2 : 2,
-    key3 : 3,
-}
+// const ob1 = {
+//     key1 : 1,
+//     key2 : 2,
+//     key3 : 3,
+// }
 
-const ob2 = {
-    key1 : 1,
-    key2 : 2,
-    key3 : 3,
-}
+// const ob2 = {
+//     key1 : 1,
+//     key2 : 2,
+//     key3 : 3,
+// }
 
 
-console.log("1===1 : " + (1===1));
-console.log("1===2 : " + (1===2));
-console.log("1 < 2 : " + (1 < 2));
-console.log("1 > 1 : " + (1 > 1));
+// console.log("1===1 : " + (1===1));
+// console.log("1===2 : " + (1===2));
+// console.log("1 < 2 : " + (1 < 2));
+// console.log("1 > 1 : " + (1 > 1));
 
 // Boolean은 2개의 구체적인 데이터를 가지고 있다.
 // Boolean의 종류는 true, false
