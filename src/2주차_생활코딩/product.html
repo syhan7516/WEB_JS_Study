@@ -7,6 +7,8 @@
    
     <!-- head / body -->
 
+
+    <!-- 조건문 실습 정답 -->
     <body style="background-color:white;">
         <p>색깔 전환 버튼 테스트</p>
         <input type="button" value="Night" onclick="
@@ -17,18 +19,61 @@
             document.querySelector('body').style.backgroundColor='white';
             document.querySelector('body').style.color='black';">
             
-        <input id="Switch" type="button" value="ON" onclick="
-            if(document.querySelector('#Switch').value === 'ON')
+        <input id="Switch1" type="button" value="ON" onclick="
+            if(document.querySelector('#Switch1').value === 'ON')
             {
                 document.querySelector('body').style.backgroundColor='white';
                 document.querySelector('body').style.color='black';
-                document.querySelector('#Switch').value ='OFF';
+                document.querySelector('#Switch1').value ='OFF';
             }
             else
             {
                 document.querySelector('body').style.backgroundColor='black';
                 document.querySelector('body').style.color='white';
-                document.querySelector('#Switch').value ='ON';
+                document.querySelector('#Switch1').value ='ON';
             }">
+         <input id="Switch2" type="button" value="ON" onclick="
+         if(document.querySelector('#Switch2').value === 'ON')
+         {
+             document.querySelector('body').style.backgroundColor='white';
+             document.querySelector('body').style.color='black';
+             document.querySelector('#Switch2').value ='OFF';
+         }
+         else
+         {
+             document.querySelector('body').style.backgroundColor='black';
+             document.querySelector('body').style.color='white';
+             document.querySelector('#Switch2').value ='ON';
+         }">
+          <input id="Switch3" type="button" value="ON" onclick="
+          if(document.querySelector('#Switch3').value === 'ON')
+          {
+              document.querySelector('body').style.backgroundColor='white';
+              document.querySelector('body').style.color='black';
+              document.querySelector('#Switch3').value ='OFF';
+          }
+          else
+          {
+              document.querySelector('body').style.backgroundColor='black';
+              document.querySelector('body').style.color='white';
+              document.querySelector('#Switch3').value ='ON';
+          }">
+
+          <!-- 리팩토링 실습 정답 -->
+          <input type="button" value="Re_ON" onclick="
+          var target = document.querySelector('body');
+          if(this.value === 'Re_ON')
+          {
+              target.style.backgroundColor='white';
+              target.style.color='black';
+              this.value ='Re_OFF';
+          }
+          else
+          {
+              target.style.backgroundColor='black';
+              target.style.color='white';
+              this.value ='Re_ON';
+          }">
+
     </body>
 </html>
