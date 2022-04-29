@@ -2,7 +2,7 @@
 <html lang="ko">
     <head>
         <meta charset="UTF-8">
-        <title>생활 코딩 프로덕트</title>
+        <title>생활 코딩 프로덕트 정답</title>
     </head>
    
     <!-- head / body -->
@@ -75,5 +75,76 @@
               this.value ='Re_ON';
           }">
 
+        <!-- 반복문 실습 정답 -->
+        
+        <script>
+            let site = ['naver','daum','google'];
+            for(let i= 0; i<site.length; i++)
+            {
+                document.write(`<li><a href='https://www.${site[i]}.com'>${site[i]}</a></li>`);
+            }
+        </script>
+
+        <!-- 반복문 활용 실습 정답 -->
+
+        <input type="button" value="Re_ON1" onclick="
+        var target = document.querySelector('body');
+        if(this.value === 'Re_ON1')
+        {
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            this.value ='Re_OFF1';
+
+            let alist = document.querySelectorAll('a');
+            for(let i=0; i<alist.length; i++)
+            {
+                alist[i].style.color = 'blue';
+            }
+        }
+        else
+        {
+            target.style.backgroundColor='black';
+            target.style.color='white';
+            this.value ='Re_ON1';
+
+            let alist = document.querySelectorAll('a');
+            for(let i=0; i<alist.length; i++)
+            {
+                alist[i].style.color = 'powderblue';
+            }
+        }">
+
+        <!-- 함수 실습 정답 -->
+        <script>
+            function changeHandler(self) {
+            var target = document.querySelector('body');
+            if(self.value === 'Re_ON2')
+            {
+                target.style.backgroundColor='white';
+                target.style.color='black';
+                self.value ='Re_OFF2';
+
+                let alist = document.querySelectorAll('a');
+                for(let i=0; i<alist.length; i++)
+                {
+                    alist[i].style.color = 'blue';
+                }
+            }
+            else
+            {
+                target.style.backgroundColor='black';
+                target.style.color='white';
+                self.value ='Re_ON2';
+
+                let alist = document.querySelectorAll('a');
+                for(let i=0; i<alist.length; i++)
+                {
+                    alist[i].style.color = 'powderblue';
+                }
+            }
+        }
+        </script>
+        <input type="button" value="Re_ON2" onclick="changeHandler(this)">
+        
     </body>
 </html>
