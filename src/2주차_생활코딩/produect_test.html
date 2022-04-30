@@ -8,8 +8,8 @@
     <!-- head / body -->
 
     <body>
-        <h2>프로덕트 실습 1, 2번</h2>
         <!-- 프로덕트 실습 1 정답 -->
+        <h2>프로덕트 실습 1, 2번</h2>
         <input id="Switch" type="button" value="OFF" onclick="
         if(document.querySelector('#Switch').value === 'OFF')
         {
@@ -49,8 +49,8 @@
 
         <br>
         
-        <h2>프로덕트 실습 3번</h2>
         <!-- 프로덕트 실습 3 정답 -->
+        <h2>프로덕트 실습 3번</h2>
         <input type="button" value="OFF" onclick="
         if(this.value === 'OFF')
         {
@@ -63,8 +63,8 @@
             this.value = 'OFF';
         }">
 
-        <h2>프로덕트 실습 4번</h2>
         <!-- 프로덕트 실습 4 정답 -->
+        <h2>프로덕트 실습 4번</h2>
         <input type="button" value="OFF" onclick="
         var target = document.querySelector('body');
         if(this.value === 'OFF')
@@ -78,6 +78,7 @@
             this.value = 'OFF';
         }">
 
+        <!-- 프로덕트 실습 5, 6 정답 -->
         <h2>프로덕트 실습 5번, 6번</h2>
         <script>
             var site = ['naver','daum','google'];
@@ -87,10 +88,11 @@
             }
         </script>
 
+        <!-- 프로덕트 실습 7 정답 -->
         <h2>프로덕트 실습 7번</h2>
         <input type="button" value="OFF" onclick="
         var target = document.querySelector('body');
-        let alist = document.querySelectorAll('a');
+        var alist = document.querySelectorAll('a');
         if(this.value === 'OFF')
         {
             target.style.backgroundColor = 'black';
@@ -117,5 +119,39 @@
             }
         </script>
         
+        <!-- 프로덕트 실습 8 정답 -->
+        <h2>프로덕트 실습 8번</h2>
+        <input type="button" value="OFF" onclick="test(this);">
+        <script>
+            function test(self)
+            {
+                var target = document.querySelector('body');
+                var alist = document.querySelectorAll('a');
+                if(self.value === 'OFF')
+                {
+                    target.style.backgroundColor = 'black';
+                    self.value = 'ON';
+                    for(let i=0; i<alist.length; i++)
+                    {
+                        alist[i].style.color = 'green';
+                    }
+                }
+                else
+                {
+                    target.style.backgroundColor = 'white';
+                    self.value = 'OFF';
+                    for(let i=0; i<alist.length; i++)
+                    {
+                        alist[i].style.color = 'gray';
+                    }
+                }
+            }
+            var site = ['naver','daum','google'];
+            for(let i=0; i<site.length; i++)
+            {
+                document.write(`<li><a href="https://www.${site[i]}.com">${site[i]}</a></li>`);
+            }
+        </script>
+
     </body>
 </html>
