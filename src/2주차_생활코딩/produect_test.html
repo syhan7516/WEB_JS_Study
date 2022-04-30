@@ -80,11 +80,42 @@
 
         <h2>프로덕트 실습 5번, 6번</h2>
         <script>
-            let site = ['naver','daum','google'];
+            var site = ['naver','daum','google'];
             for(let i=0; i<site.length; i++)
             {
                 document.write(`<li><a href="https://www.${site[i]}.com">${site[i]}</a></li>`);
             }
         </script>
+
+        <h2>프로덕트 실습 7번</h2>
+        <input type="button" value="OFF" onclick="
+        var target = document.querySelector('body');
+        let alist = document.querySelectorAll('a');
+        if(this.value === 'OFF')
+        {
+            target.style.backgroundColor = 'black';
+            this.value = 'ON';
+            for(let i=0; i<alist.length; i++)
+            {
+                alist[i].style.color = 'green';
+            }
+        }
+        else
+        {
+            target.style.backgroundColor = 'white';
+            this.value = 'OFF';
+            for(let i=0; i<alist.length; i++)
+            {
+                alist[i].style.color = 'gray';
+            }
+        }">
+        <script>
+            var site = ['naver','daum','google'];
+            for(let i=0; i<site.length; i++)
+            {
+                document.write(`<li><a href="https://www.${site[i]}.com">${site[i]}</a></li>`);
+            }
+        </script>
+        
     </body>
 </html>

@@ -32,18 +32,19 @@ document.write("<div>4장 배열</div>");
 // 배열 길이 : 배열명.length
 // 배열 내 데이터 추가 : 배열명.push(값)
 
+// ---------------------------------------------------------
 // 실습 1 : 자신의 개인정보를 저장할 빈 배열 만들기!
 // 실습 2 : 빈 배열에 이름, 나이, 직업유무, 시력추가해보자! (시력은 배열로!)
 // 실습 3 : 배열 요소에 null, undefined, NaN, 객체, 함수가 추가되는지 확인해보기!
 
+// ----------------------------------------------------------------------------
+// // 실습 1 : 정답
+// let info = [];
 
-// 실습 1 : 정답
-let info = [];
+// // 실습 2 : 정답
+// info.push("shin",28,false,[1.2,1.5]);
+// console.log(info);
 
-// 실습 2 : 정답
-info.push("shin",28,false,[1.2,1.5]);
-console.log(info);
-
-// 실습 3 : 정답
-info.push(null,undefined,NaN,{key1:1},function() {console.log('함수');});
-console.log(info);
+// // 실습 3 : 정답
+// info.push(null,undefined,NaN,{key1:1},function() {console.log('함수');});
+// console.log(info);
