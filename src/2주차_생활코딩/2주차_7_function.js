@@ -1,4 +1,28 @@
-document.write("<div>7장 함수</div>");
+// document.write("<div>7장 함수</div>");
+
+// // 매개 변수없는 함수
+// function sentense1()
+// {
+//     console.log("sentense1");
+// }
+
+// // 매개 변수있는 함수
+// function sentense2(num1,num2)
+// {
+//     let sum = num1+num2;
+//     console.log('sentense2 = ' + sum);
+// }
+
+// // return으로 함수의 결과 전달 받기
+// function sentense3(num3,num4)
+// {
+//     let sub = num4-num3;
+//     return sub;
+// }
+// sentense1();
+// sentense2(1,2);
+// console.log('sentense3 = ' + sentense3(2,5));
+
 
 // 정의 : 함수란? 
 // 불규칙적인 반복은 반복문을 사용할 수 없다!!
@@ -24,6 +48,7 @@ document.write("<div>7장 함수</div>");
 // 전역 변수, 글로벌 변수 : 함수 외부에서 생성된 변수는 함수 내에서 사용 가능!!
 // 함수의 결과 값을 전달할 때 return을 통해 전달 가능!
 
-// 실습 1 : 위의 세 가지 함수 작성법의 차이는 ??
-// 실습 2 : 프로덕트 코드에서 버튼 이벤트를 함수로 리팩토링하기!
-// 실습 3 : this와 self의 인지!!
+// 실습 1 : 함수 작성법 세 가지로 함수 작성해보기!!
+// 실습 2 : 위의 세 가지 함수 작성법의 차이는 ??
+// 실습 3 : 프로덕트 코드에서 버튼 이벤트를 함수로 리팩토링하기!
+// 실습 4 : this와 self의 인지!!
