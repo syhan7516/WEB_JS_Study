@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>생활 코딩 프로덕트 연습</title>
+    </head>
+
+    <!-- head / body -->
+
+    <body>
+        <!-- 프로덕트 실습 1 정답 -->
+        <h2>프로덕트 실습 1, 2번</h2>
+        <input id="Switch" type="button" value="OFF" onclick="
+        if(document.querySelector('#Switch').value === 'OFF')
+        {
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('#Switch').value = 'ON';
+        }
+        else
+        {
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('#Switch').value = 'OFF';
+        }">
+
+        <!-- 프로덕트 실습 2 정답 -->
+        <input id="Switch1" type="button" value="OFF" onclick="
+        if(document.querySelector('#Switch1').value === 'OFF')
+        {
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('#Switch1').value = 'ON';
+        }
+        else
+        {
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('#Switch1').value = 'OFF';
+        }">
+
+        <input id="Switch2" type="button" value="OFF" onclick="
+        if(document.querySelector('#Switch2').value === 'OFF')
+        {
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('#Switch2').value = 'ON';
+        }
+        else
+        {
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('#Switch2').value = 'OFF';
+        }">
+
+        <br>
+        
+        <!-- 프로덕트 실습 3 정답 -->
+        <h2>프로덕트 실습 3번</h2>
+        <input type="button" value="OFF" onclick="
+        if(this.value === 'OFF')
+        {
+            document.querySelector('body').style.backgroundColor = 'black';
+            this.value = 'ON';
+        }
+        else
+        {
+            document.querySelector('body').style.backgroundColor = 'white';
+            this.value = 'OFF';
+        }">
+
+        <!-- 프로덕트 실습 4 정답 -->
+        <h2>프로덕트 실습 4번</h2>
+        <input type="button" value="OFF" onclick="
+        var target = document.querySelector('body');
+        if(this.value === 'OFF')
+        {
+            target.style.backgroundColor = 'black';
+            this.value = 'ON';
+        }
+        else
+        {
+            target.style.backgroundColor = 'white';
+            this.value = 'OFF';
+        }">
+
+        <!-- 프로덕트 실습 5, 6 정답 -->
+        <h2>프로덕트 실습 5번, 6번</h2>
+        <script>
+            var site = ['naver','daum','google'];
+            for(let i=0; i<site.length; i++)
+            {
+                document.write(`<li><a href="https://www.${site[i]}.com">${site[i]}</a></li>`);
+            }
+        </script>
+
+        <!-- 프로덕트 실습 7 정답 -->
+        <h2>프로덕트 실습 7번</h2>
+        <input type="button" value="OFF" onclick="
+        var target = document.querySelector('body');
+        var alist = document.querySelectorAll('a');
+        if(this.value === 'OFF')
+        {
+            target.style.backgroundColor = 'black';
+            this.value = 'ON';
+            for(let i=0; i<alist.length; i++)
+            {
+                alist[i].style.color = 'green';
+            }
+        }
+        else
+        {
+            target.style.backgroundColor = 'white';
+            this.value = 'OFF';
+            for(let i=0; i<alist.length; i++)
+            {
+                alist[i].style.color = 'gray';
+            }
+        }">
+        <script>
+            var site = ['naver','daum','google'];
+            for(let i=0; i<site.length; i++)
+            {
+                document.write(`<li><a href="https://www.${site[i]}.com">${site[i]}</a></li>`);
+            }
+        </script>
+        
+        <!-- 프로덕트 실습 8 정답 -->
+        <h2>프로덕트 실습 8번</h2>
+        <input type="button" value="OFF" onclick="test(this);">
+        <script>
+            function test(self)
+            {
+                var target = document.querySelector('body');
+                var alist = document.querySelectorAll('a');
+                if(self.value === 'OFF')
+                {
+                    target.style.backgroundColor = 'black';
+                    self.value = 'ON';
+                    for(let i=0; i<alist.length; i++)
+                    {
+                        alist[i].style.color = 'green';
+                    }
+                }
+                else
+                {
+                    target.style.backgroundColor = 'white';
+                    self.value = 'OFF';
+                    for(let i=0; i<alist.length; i++)
+                    {
+                        alist[i].style.color = 'gray';
+                    }
+                }
+            }
+            var site = ['naver','daum','google'];
+            for(let i=0; i<site.length; i++)
+            {
+                document.write(`<li><a href="https://www.${site[i]}.com">${site[i]}</a></li>`);
+            }
+        </script>
+
+    </body>
+</html>
