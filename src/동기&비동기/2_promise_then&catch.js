@@ -1,4 +1,4 @@
-// document.write("<div>2장 then & catch</div>");
+document.write("<div>2장 then & catch</div>");
 
 // // 동기
 // for(let num1 = 1; num1 <= 5; num1++){
@@ -39,7 +39,9 @@
 // then, catch 둘 다 콜백 함수를 받으며, then은 성공 결과! / catch은 실패 결과! 
 
 // Promise 사용 이유 !
-// 비동기 작업 시 성공 ? 실패 ? 했는지 표준화 방식으로 처리하기 위해 사용
+// 비동기적인 작업을 할 때 콜백 함수가 자주 사용되고, 콜백 안 콜백 안 콜백...으로...
+// 즉, 콜백 Hell → 콜백 지옥을 자주 경험 ! (→ 코드가 복잡하고, 보기 어려움 !)
+// 비동기 작업 시 성공 ? 실패 ? 했는지 표준화 방식으로 처리하기 위해 사용되며, 콜백 Hell로 부터 벗어나게 함!
 
 // Promise 사용 방법 !
 // 1. Nested Promise : then 안에 then 안에 then ...
