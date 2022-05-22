@@ -1,4 +1,4 @@
-// document.write("<div>1장 Callback</div>");
+document.write("<div>1장 Callback</div>");
 
 // // 변수가 숫자를 가지는 First Class Citizen 경우
 // let a = 1
