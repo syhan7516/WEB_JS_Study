@@ -1,4 +1,4 @@
-document.write("<div>1장 객체 </div>");
+document.write("<div>1장 객체 기본</div>");
 
 // 데이터
 
