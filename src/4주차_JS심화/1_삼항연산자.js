@@ -1,46 +1,60 @@
-document.write("<div>1장 Callback</div>");
+document.write("<div>1장 삼항연산자</div>");
 
-// // 변수가 숫자를 가지는 First Class Citizen 경우
-// let a = 1
-// console.log(`a : ${a}는 First Class Citizen`);
-
-
-// // 변수가 함수를 가지는 First Class Citizen 경우
-// let b = function test() {return 1;};
-// console.log(`b : ${b()}는 First Class Citizen`);
-
-// // 변수가 조건을 못가지는 Second Class Citizen 경우
-// let c = if(1<2) {return 1;};
-
-// // 함수가 다른 함수를 리턴하는 경우
-// function f1(){
-//     let f0 = function(){console.log(`f1_var는 f0 함수를 리턴하는 f1 함수`);}
-//     return f0;
-// };
-// let f1_var = f1();
-// f1_var();
-
-// // 함수가 다른 함수를 인자로 가지는 경우
-// function f2(){
-//     console.log(`f2_var 함수 호출은 f2를 입력 → f2호출`)
+// // 예1) 주어진 숫자가 양수인지 음수인지 판단하는 조건식
+// // 원래 조건식 
+// let test1 = 3;
+// if(test1 >= 0)
+// {
+//     console.log("양수");
 // }
-// function f2_var(f2){
-//     f2();
+// else{
+//     console.log("음수");
 // }
-// f2_var(f2);
+// // 삼항 연산자 적용  
+// let test2 = 3;
+// test2 >= 3 ? console.log("참") : console.log("거짓");
 
-// 프로그래밍 개념에는 First Class Citizen이 존재! (일급 시민, 일급 객체)
-// Ex1) 1급 : 변수 = 숫자, 변수 = 함수 (O)
-// Ex2) 2급 : 변수 = 조건 (X) 
-// Ex3) 함수가 다른 함수의 리턴 값으로 가지기 가능하다면 1급 !
-// Ex4) 함수가 다른 함수의 입력 값으로 가지기 가능하다면 1급 !
-// Ex4와 같이 어떤 함수의 인자로 함수가 전달되어 함수 내에서 함수 호출이 이루어지는 함수를 Callback 함수!
-// 콜백함수는 일회성으로 많이 사용되어 익명 함수, 에로우 함수로 주로 사용!
-// Callback함수 사례!! (.filter / .map 등등 )
+// // 예2) 배열이 비었는지 확인하는 조건식
+// // 원래 조건식
+// let test3 = [];
+// if(test3.length === 0)
+// {
+//     console.log("빈 배열입니다!");
+// }
+// else
+// {
+//     console.log("안 빈 배열입니다!");
+// }
+// // 삼항 연산자 적용
+// let test4 = [1];
+// test4.length === 0 ? console.log("빈 배열입니다!") : console.log("안 빈 배열입니다!");
 
-// ---------------------------------------------------------
-// 실습 1 : 배운 콜백 함수 개념으로 나만의 필터 함수 만들어 보기!!
+// // 활용 1) 값을 참, 거짓일 때 구분해서 반환
+// let test5 = [1,2];
+// const test5_result = test5.length === 0 ? "빈 배열!" : "안 빈 배열!";
+// console.log(test5_result);
 
-// ---------------------------------------------------------
-//  1. 실습 정답
-//  스터디 떄 공개 !
+// // 활용 2) 함수를 참, 거짓일 때 구분해서 반환
+
+// // 활용 3) truthy & falsy로 주어진 값이 null ? , undefined ? 인지 판단
+// let test6;
+// const test6_result = test6 ? true : false;
+// console.log(test6_result);
+
+// // 삼항연산자 ?
+// // : 삼항의 연산으로 이루어진 식!
+
+// // 사용 이유 ?
+// // : 조건문을 파격적으로 줄여주는 효과! (5줄 → 1줄)
+
+// // 사용 방법 ?
+// // : 조건식 ? 참 결과 : 거짓 결과;
+
+// // ---------------------------------------------------------
+// // 실습 1 : 학점 계산 프로그램를 삼항 연산자로 만들기 !
+// // 90점 이상 A+ , 50점 이상 B+ , 둘 다 아니면 F , 점수는 자신이 설정 !
+
+// // ---------------------------------------------------------
+// //  1. 실습 정답
+// let score = 90;
+// score >= 90 ? console.log("A+") : score >= 50 ? console.log("B+") : console.log("F");
